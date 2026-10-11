@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #222;
+}
+
+header {
+    background-color: #176b87;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#note-input {
+    flex: 1;
+    min-width: 200px;
+}
+
+#search-input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #176b87;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#error-message {
+    color: #c62828;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.note {
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.note-text {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.note-category {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.note-date {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.delete-btn {
+    float: right;
+}
+
+.category-personal {
+    border-left: 5px solid teal;
+}
+
+.category-work {
+    border-left: 5px solid darkred;
+}
+
+.category-study {
+    border-left: 5px solid blue;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+
+/* Small screens */
+
+@media (max-width: 600px) {
+
+    main {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #note-input,
+    #note-category,
+    form button {
+        width: 100%;
+    }
+
+    .delete-btn {
+        float: none;
+        margin-top: 10px;
+    }
+}
